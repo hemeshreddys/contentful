@@ -11,8 +11,9 @@ class PostsIndex extends Component {
     this.props.fetchPosts();
   }
   renderPosts() {
+
     return this.props.posts.map((post, index) => {
-      return (
+      return (        
         <section key={post.sys.id} className={`spotlight style1 orient-${index%2 ? 'right':'left'} content-align-left image-position-center onscroll-image-fade-in`}>
           <div className="content">
             <h2>{post.fields.title}</h2>
@@ -27,7 +28,7 @@ class PostsIndex extends Component {
             <Link to={"posts/" + post.sys.id} className="button big wide smooth-scroll-middle">Learn more</Link>
           </div>
           <div className="image">
-            <Asset assetId={post.fields.featuredImage.sys.id} />
+            <Asset assetId={"post.fields.featuredImage.sys.id"} />
           </div>
         </section>
       );

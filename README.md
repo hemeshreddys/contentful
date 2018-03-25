@@ -2,7 +2,7 @@
 Checkout this repo, install dependencies, then start the server with the following:
 
 ```
-	> git clone git@github.com:avishekjana/react-redux-contentful-blog.git
+	> git clone https://github.com/hemeshreddys/contentful.git
 	> cd react-redux-contentful-blog
 	> npm install
 	> npm start

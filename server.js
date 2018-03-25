@@ -9,6 +9,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'index.html'))
 });
 
-app.listen(process.env.PORT || 5000, function () {
-  console.log('Express server listening on %d, in %s mode', (process.env.PORT || 5000), app.get('env'));
+app.listen(process.env.PORT || 3000, function () {
+  console.log('Express server listening on %d, in %s mode', (process.env.PORT || 3000), app.get('env'));
 });
