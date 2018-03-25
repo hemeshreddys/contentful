@@ -8,7 +8,6 @@ class Footer extends Component {
           <ul className="icons">
             <li><a href="https://www.linkedin.com/in/hemesh-reddy-s-61b9b12b/" className="icon style2 fa-linkedin"><span className="label">LinkedIn</span></a></li>
           </ul>
-          <p>Adopted from a template designed by: <a href="https://html5up.net">HTML5 UP</a>.</p>
         </div>
       </footer>
     );

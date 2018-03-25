@@ -2,14 +2,15 @@
   "name": "react-redux-base",
   "version": "1.0.0",
   "description": "Simple blog app for Redux with React and Babel support",
-  "homepage" : "http://hemeshreddys.github.io/contentful",
+  "homepage": "http://hemeshreddys.github.io/contentful",
   "main": "index.js",
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "postinstall": "webpack -p --define process.env.NODE_ENV='\"production\"' --progress --colors --display-error-details",
     "start": "node server.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +31,7 @@
   "dependencies": {
     "axios": "^0.16.0",
     "babel-preset-stage-1": "^6.1.18",
+    "gh-pages": "^1.1.0",
     "lodash": "^3.10.1",
     "marked": "^0.3.6",
     "react": "^0.14.3",

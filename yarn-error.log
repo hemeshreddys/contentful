@@ -1,0 +1,74 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js add gh-pages
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/DevDesktop/tools
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  6.11.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "react-redux-base",
+    "version": "1.0.0",
+    "description": "Simple blog app for Redux with React and Babel support",
+    "homepage": "http://hemeshreddys.github.io/contentful",
+    "main": "index.js",
+    "scripts": {
+      "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+      "postinstall": "webpack -p --define process.env.NODE_ENV='\"production\"' --progress --colors --display-error-details",
+      "start": "node server.js",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "babel-core": "^6.2.1",
+      "babel-loader": "^6.2.0",
+      "babel-preset-es2015": "^6.1.18",
+      "babel-preset-react": "^6.1.18",
+      "chai": "^3.5.0",
+      "chai-jquery": "^2.0.0",
+      "jquery": "^2.2.1",
+      "jsdom": "^8.1.0",
+      "mocha": "^2.4.5",
+      "react-addons-test-utils": "^0.14.7",
+      "webpack": "^1.12.9",
+      "webpack-dev-server": "^1.14.0"
+    },
+    "dependencies": {
+      "axios": "^0.16.0",
+      "babel-preset-stage-1": "^6.1.18",
+      "gh-pages": "^1.1.0",
+      "lodash": "^3.10.1",
+      "marked": "^0.3.6",
+      "react": "^0.14.3",
+      "react-dom": "^0.14.3",
+      "react-marked": "^0.3.1",
+      "react-redux": "^4.0.0",
+      "react-router": "^2.0.1",
+      "react-text-truncate": "^0.8.3",
+      "redux": "^3.0.4",
+      "redux-promise": "^0.5.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/axios: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:123749:19)
+      at ontimeout (timers.js:386:14)
+      at tryOnTimeout (timers.js:250:5)
+      at Timer.listOnTimeout (timers.js:214:5)
